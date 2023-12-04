@@ -1,0 +1,196 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border-style: none;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-image: url('/resources/images/background.webp');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+button {
+	background: var(--button-color);
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+}
+
+:root {
+	--earnings-header: #2590CC;
+	--earnings-body: #37B2BA;
+	--losing-header: #E75555;
+	--losing-body: #9a4e60;
+	--rewards-header:	#579252;
+	--rewards-body:	#76cc7a;
+	--button-color: #d9d9d9;
+}
+
+li {
+	list-style-type: none;
+}
+
+.container {
+	background: #D9D9D9;
+	width: 1258px;
+	height: 954px;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.top {
+	background: #BB6666;
+	width: 100%;
+	height: 80px;
+}
+
+.top ul {
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+	width: 100%;
+	font-size: 2rem;
+	align-items: center;
+}
+
+.top ul li {
+	width: 100%;
+	text-align: center;
+}
+
+.habits, .rewards {
+	width: 100%;
+	height: 80px;
+}
+
+.habits ul, .rewards ul {
+	display: flex;
+	gap: 20px;
+	width: 100%;
+	font-size: 3rem;
+	align-items: center;
+}
+
+.habits ul li, .rewards ul li {
+	width: 100%;
+	text-align: center;
+}
+
+.changes {
+	width: 100%;
+	height: 82px;
+}
+
+.changes ul {
+	display: flex;
+	width: 100%;
+	font-size: 36px;
+	text-align: center;
+	height: 100%;
+}
+
+#earnings-header {
+	background: var(--earnings-header);
+	width: 100%;
+}
+
+#losing-header {
+	background: var(--losing-header);
+	width: 100%;
+}
+
+#rewards-header {
+	background: var(--rewards-header);
+	width: 100%;
+}
+
+.container-main {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.container-buttons {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: stretch;
+}
+
+.container-buttons .block {
+	width: 100%;
+	height: auto;
+}
+
+.container-buttons .block ul {
+	display: grid;
+	grid-template-rows: repeat(6, 80px);
+	gap: 11px;
+	margin: 40px 20px 0px 20px;
+}
+
+.earnings button:hover {
+	cursor: pointer;
+	transition: 0.2s;
+	background: cornflowerblue;
+}
+
+.losings button:hover {
+	cursor: pointer;
+	transition: 0.2s;
+	background: #E75555;
+}
+
+.rewardings button:hover {
+	cursor: pointer;
+	transition: 0.2s;
+	background: #d8b863;
+}
+
+.earnings {
+	background: var(--earnings-body);
+}
+
+.losings {
+	background: var(--losing-body);
+}
+
+.rewardings {
+	background: var(--rewards-body);
+}
+
+#reward {
+	background: var(--rewards-header);
+}
+
+#reward:hover {
+	cursor: pointer;
+	transition: 0.2s;
+	background: #d8b863;
+}
+
+.reset #reset{
+	width: 30%;
+	float: left;
+	height: 100%;
+	font-size: 2.5rem;
+}
+
+#reset:hover {
+	cursor: pointer;
+	transition: 0.2s;
+	background: #E75555;
+}
