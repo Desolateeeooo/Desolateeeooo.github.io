@@ -8,6 +8,7 @@
 	<script defer type="module" src="/resources/scripts/earnings.js"></script>
 	<script defer type="module" src="/resources/scripts/losings.js"></script>
 	<script defer type="module" src="/resources/scripts/overall.js"></script>
+	<script defer type="module" src="/resources/scripts/rewards.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -28,7 +29,10 @@
 			<ul>
 			<li id="earnings-header">You earned this day: <span id="earningCount">(n)</span> points</li>
 			<li id="losing-header">You lost this day: <span id="losingCount">(n)</span> points</li>
-			<li id="rewards-header"><button id="reward">Add a Reward</button></li>
+			<li id="rewards-header">
+				<button id="reward">Add a Reward</button>
+			</li>
+			
 			</div>
 			<div class="container-buttons">
 				<div class="earnings block">
@@ -50,9 +54,23 @@
 					<li><button id="sweets">Eat Dessert or Sweets (-10)</button></li>
 				</div>
 				<div class="rewardings block">
-					<ul>
-					<li><button>Clear All</button></li>
+					<ul id="list">
+					<li>
+						<button id="clear">Clear All</button>
+					</li>
+					<li>
+						<form>
+						<label>Reward name:</label><input id="rewardName" type="text">
+						<label>cost:</label><input id="cost" type="text">
+						<!-- <input type="button" value="add rule" onclick="pushRules()"> -->
+					</form>
+				</li>
+				<!-- <li>
+					<button id="costil">Костыль, для того чтобы работало</button>
+				</li> -->
 				</div>
+
+
 			</div>
 	</div>
 
