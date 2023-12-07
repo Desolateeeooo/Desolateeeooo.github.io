@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,71 +11,72 @@
 	<script defer type="module" src="/resources/scripts/overall.js"></script>
 	<script defer type="module" src="/resources/scripts/rewards.js"></script>
 </head>
+
 <body>
 	<div class="container">
 		<div class="top">
 			<ul>
-			<li id="WR">White Room Detox Point System</li>
-			<li id="OP">Your points are: <span id="overallPoints">(n)</span></li>
-			<li id="name">Your name is: <span>(string)</span></li>
+				<li id="WR">White Room Detox Point System</li>
+				<li id="OP">Your points are: <span id="overallPoints">(n)</span></li>
+				<li id="name">Your name is: <span>(string)</span></li>
+			</ul>
 		</div>
 		<div class="habits rewards">
-		<ul>
-		<li>Good Habits</li>
-		<li>Bad Habits</li>
-		<li>Rewards</li>
-	</div>
-	<div class="container-main">
-		<div class="changes">
 			<ul>
-			<li id="earnings-header">You earned this day: <span id="earningCount">(n)</span> points</li>
-			<li id="losing-header">You lost this day: <span id="losingCount">(n)</span> points</li>
-			<li id="rewards-header">
-				<button id="reward">Add a Reward</button>
-			</li>
-			
+				<li>Good Habits</li>
+				<li>Bad Habits</li>
+				<li>Rewards</li>
+		</div>
+		<div class="container-main">
+			<div class="changes">
+				<ul>
+					<li id="earnings-header">You earned this day: <span id="earningCount">(n)</span> points</li>
+					<li id="losing-header">You lost this day: <span id="losingCount">(n)</span> points</li>
+					<li id="rewards-header">
+						<button id="reward">Add a Reward</button>
+					</li>
+
 			</div>
 			<div class="container-buttons">
 				<div class="earnings block">
 					<ul>
-					<li><button id="run">Run (+5)</button></li>
-					<li><button id="shower">Cold Shower (+5)</button></li>
-					<li><button id="workout">Workout (+3)</button></li>
-					<li><button id="stretch">Stretch (+1)</button></li>
-					<li><button id="mediate">Mediate (+2)</button></li>
-					<li><button id="reset">Reset Points</button></li>
+						<li><button id="run">Run (+5)</button></li>
+						<li><button id="shower">Cold Shower (+5)</button></li>
+						<li><button id="workout">Workout (+3)</button></li>
+						<li><button id="stretch">Stretch (+1)</button></li>
+						<li><button id="mediate">Mediate (+2)</button></li>
+						<li><button id="reset">Reset Points</button></li>
 				</div>
 				<div class="losings block">
 					<ul>
-					<li><button id="socialMedia">On Social Media For Over 10 Minutes (-20)</button></li>
-					<li><button id="scroll">Scroll (-30)</button></li>
-					<li><button id="fap">Fap (-60)</button></li>
-					<li><button id="play">Play Video games For Over 10 Minutes (-20)</button></li>
-					<li><button id="drugs">Drugs or Alcohol (-50)</button></li>
-					<li><button id="sweets">Eat Dessert or Sweets (-10)</button></li>
+						<li><button id="socialMedia">On Social Media For Over 10 Minutes (-20)</button></li>
+						<li><button id="scroll">Scroll (-30)</button></li>
+						<li><button id="fap">Fap (-60)</button></li>
+						<li><button id="play">Play Video games For Over 10 Minutes (-20)</button></li>
+						<li><button id="drugs">Drugs or Alcohol (-50)</button></li>
+						<li><button id="sweets">Eat Dessert or Sweets (-10)</button></li>
 				</div>
 				<div class="rewardings block">
-					<ul id="list">
-					<li>
-						<button id="clear">Clear All</button>
-					</li>
-					<li>
-						<form>
-						<label>Reward name:</label><input id="rewardName" type="text">
-						<label>cost:</label><input id="cost" type="text">
-						<!-- <input type="button" value="add rule" onclick="pushRules()"> -->
-					</form>
-				</li>
-				<!-- <li>
-					<button id="costil">Костыль, для того чтобы работало</button>
-				</li> -->
+					<ul>
+						<li>
+							<button id="clear">Clear All</button>
+						</li>
+						<li>
+							<form>
+								<label>Reward name:</label><input id="rewardName" type="text">
+								<label>cost:</label><input id="cost" type="text">
+							</form>
+						</li>
+						<ul id="list"></ul>
+					</ul>
 				</div>
 
 
 			</div>
+		</div>
+
+
 	</div>
-
-
-</div>
 </body>
+
 </html>
