@@ -64,9 +64,4 @@ const clearAll = () => {
 }
 clearButton.addEventListener("click", clearAll);
 
-const pointsMinusCost = (cost) => {
-	overallPoints.innerHTML = +overallPoints.innerHTML - cost._cost;
-	localStorage.setItem('pointStorage', overallPoints.innerHTML);
-}
-
 export default truncate;
