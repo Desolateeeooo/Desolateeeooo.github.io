@@ -1,3 +1,5 @@
+import { overallPoints } from "./overall.js";
+
 const truncate = (str, maxlength) => {
 	return (str.length > maxlength) ?
 	str.slice(0, maxlength - 1) + '…' : str;
@@ -5,8 +7,13 @@ const truncate = (str, maxlength) => {
 
 const remove = (e) => {
 	const el = e.target;
+	let rewardStorage = localStorage.getItem('rewardButtons');
+	const rewardButtons = JSON.parse(rewardStorage ?? '[]');
+	rewardButtons.forEach(reward => {
+		overallPoints.innerHTML = +overallPoints.innerHTML - reward._cost;
+		localStorage.setItem('pointStorage', overallPoints.innerHTML);
+	})
 	el.parentNode.remove();
-	// localButtonsArr
 }
 
 const createButtons = () => {
@@ -26,8 +33,8 @@ const createButtons = () => {
 }
 
 let localButtonsArr = createButtons();
-
 const list = document.querySelector("#list");
+
 const pushRewards = () => () => {
 	const i1 = document.querySelector("#rewardName").value;
 	const i2 = document.querySelector("#cost").value;
@@ -56,3 +63,10 @@ const clearAll = () => {
 	list.innerHTML = '';
 }
 clearButton.addEventListener("click", clearAll);
+
+const pointsMinusCost = (cost) => {
+	overallPoints.innerHTML = +overallPoints.innerHTML - cost._cost;
+	localStorage.setItem('pointStorage', overallPoints.innerHTML);
+}
+
+export default truncate;

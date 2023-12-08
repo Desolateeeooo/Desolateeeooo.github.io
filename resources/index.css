@@ -53,7 +53,8 @@ li {
 .top {
 	background: #BB6666;
 	width: 100%;
-	height: 80px;
+	min-height: 110px;
+	max-height: 150px;
 }
 
 .top ul {
@@ -70,10 +71,27 @@ li {
 	height: 100%;
 }
 
+.top form {
+	height: 100%;
+	font-size: 1.8rem;
+	float: right;
+	margin-right: 10px;
+}
+
+.top #inputName {
+	border: 1px solid black;
+	height: 18%;
+}
+
 @media only screen and (min-width: 320px) and
 (max-width: 480px), (orientation: portrait) {
 	body {
 		background: none;
+	}
+
+	.top {
+		min-height: 50px;
+		max-height: 90px;
 	}
 
 	.top ul #WR {
@@ -290,4 +308,9 @@ li {
 	cursor: pointer;
 	transition: 0.2s;
 	background: #E75555;
+}
+
+#leshrac {
+	font-size: 1.3rem;
+	color: #4bbf41;
 }
